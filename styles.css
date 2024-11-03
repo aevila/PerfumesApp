@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: darkcyan;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+}
+
+.empresaFrame {
+    display:flex;
+    justify-content: center;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+.empresaFrame img {
+    height: 2.5rem;
+}
+
+.empresaFrame p {
+    padding-left: 1rem;
+    font-size: 2.5rem;
+    text-align: center;
+    font-family:Georgia;
+    color:honeydew ;
+}
+
+.menuFrame {    
+    background-color: #f5ebb4;
+    margin: 0 1rem;
+}
+
+.menuFrame ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: left;
+}
+
+.menuFrame li {
+    margin-right: 0.4vw;
+}
+
+.menuFrame a {
+    text-decoration: none;
+    color:blue;
+    display: block;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.menuFrame a:hover {
+    background-color: #555;
+    color:honeydew ;
+    transition: 300ms;
+}
+
+#videoFrame {
+    margin: 1rem;
+    padding: 1rem;
+    border: 0.5vw solid #f5ebb4;
+    display: flex;
+    justify-content: center;
+}
+
+#videoFrame video {
+    width: 50rem;
+}
+
+#productosFrame {
+    margin: 1rem;
+    padding: 1rem;
+    border: 0.5vw solid #f5ebb4;
+    display: block;
+}
+
+h2 {
+    color:honeydew ;
+    font-size: 2rem;
+}
+
+h3 {
+    color:honeydew ;
+    font-size: 1.4rem;
+}
+
+p {
+    margin: 5px 0;
+    padding: 0;
+    color:honeydew ;
+    font-size: 1.2rem;
+}
+
+cite {
+    color:honeydew ;
+    font-size: 1.2rem;
+}
+
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.tarjeta {
+    padding: 1rem;
+    background-color: white;
+    border: 3px white solid;
+    border-radius: 1rem;
+    width: 15rem;
+}
+
+.tarjeta:hover {
+    border: 3px gray solid;
+}
+
+.tarjeta h3 {
+    color:black ;
+}
+
+.tarjeta img {
+    padding: 1rem;
+    border-radius: 1rem;
+    width:90%;
+}
+
+#productosFrame .tarjeta p {
+    font-size: 1rem;
+    color:black ;
+}
+
+#quienesSomosFrame {
+    border: 0.5vw solid #f5ebb4;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+#opinionesFrame {
+    border: 0.5vw solid #f5ebb4;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.grupoOpiniones {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2;
+    gap: 1rem;
+}
+
+.opinion {
+    padding: 1rem;
+    background-color: white;
+    border: 1px white solid;
+    border-radius: 1rem;
+}
+
+.opinion h2 {
+    color:black ;
+}
+
+.opinion h3 {
+    color:black ;
+}
+
+.opinion p {
+    color:black ;
+}
+
+.opinion cite {
+    color:black ;
+}
+
+#contactoFrame {
+    border: 0.5vw solid #f5ebb4;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+#contactoFrame .iconosFrame {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#contactoFrame a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color:honeydew ;
+    margin: auto;
+    padding: 0 2.2vw;
+}
+
+#contactoFrame a:hover {
+    background-color: #555;
+    color:honeydew ;
+}
+
+#contactoFrame p {
+    display: flex;
+    align-items: center;
+}
+
+#contactoFrame label {
+    color:honeydew ;
+    font-size: 1.8vw;
+    margin-right: 1rem;
+}
+
+#contactoFrame input {
+    font-size: 1.8vw;
+}
+
+#contactoFrame textarea {
+    font-size: 1.8vw;
+}
+
+#contactoFrame .button {
+    font-size: 1.8vw;
+    border: 0.1rem solid grey ;
+    padding: 0.2rem 2rem;
+    margin-right: 1rem;
+}
+
+#contactoFrame .button:hover {
+    background-color: #555;
+    color:honeydew ;
+}
+
+table {
+    font-size: 1.5rem;
+    margin: auto;
+}
+
+@media (width < 800px) {
+
+    .grupoOpiniones {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .menuFrame ul {
+        justify-content: space-around;
+    }
+    
+    .menuFrame i {
+        display: none;
+    }
+
+    .menuFrame a {
+        margin: 5px 0;
+        padding: 0;
+        font-size: 0.9rem;
+    }
+    
+    #videoFrame video {
+        width: 26rem;
+    }
+    
+    .tarjetas {
+        gap: 1rem;
+    }
+    
+    .tarjeta {
+        width: 10rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1rem;
+    }
+    
+    p {
+        margin: 2px 0;
+        font-size: 1rem;
+    }
+    
+    cite {
+        font-size: 1rem;
+    }
+    
+    #contactoFrame a {
+        font-size: 1.3rem;
+        padding: 0 2.2vw;
+    }
+    
+}
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagenes/logoPS.jpg" type="image/x-icon">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Perfume Store</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="empresaFrame">
+            <img src="imagenes/logoPS.jpg" alt="">
+            <p>Perfume Store</p>
+        </div>
+        <div class="menuFrame">
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fa-solid fa-house" style="color: #0000ff;"></i> Inicio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <form action="sendmail.html">
+        <fieldset  id="contactoFrame">
+
+            <label for="fullname">Ingrese su Nombre y Apellido</label>
+            <input name="fullname" id="fullname" type="text">
+            <br><br>
+
+            <label for="email">Ingrese su email</label>
+            <input name="email" id="email" type="email">
+            <br><br>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <br><br>
+
+            <div>
+                <input type="submit" value="Enviar" class="button">
+                <button type="reset" class="button">Limpiar</button>
+            </div>
+
+        </fieldset>
+
+    </form>
+
+</body>
+
+</html>
